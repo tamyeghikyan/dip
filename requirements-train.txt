@@ -1,0 +1,4 @@
+# Optional: training / experimentation (trainig_model.py)
+-r requirements.txt
+matplotlib>=3.7,<4
+scikit-learn>=1.3,<2

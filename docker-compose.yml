@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: ./python
+      dockerfile: dockerfile
+    environment:
+      API_TOKEN: ${API_TOKEN:-predict_digit}
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+    expose:
+      - "5000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./React/predict_digit
+      dockerfile: dockerfile
+    environment:
+      REACT_APP_TOKEN: ${API_TOKEN:-predict_digit}
+      REACT_APP_API_BASE_URL: ${REACT_APP_API_BASE_URL:-https://localhost}
+    expose:
+      - "80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
+      - backend
+    restart: unless-stopped

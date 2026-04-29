@@ -1,0 +1,32 @@
+FROM python:3.10-slim-bookworm
+
+WORKDIR /app
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    TF_CPP_MIN_LOG_LEVEL=2 \
+    PIP_DEFAULT_TIMEOUT=1200 \
+    OPENCV_VIDEOIO_PRIORITY_MSMF=0
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    tesseract-ocr \
+    tesseract-ocr-hye \
+    libglib2.0-0 \
+    libgomp1 \
+    libgl1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY pip.conf /etc/pip.conf
+COPY requirements.txt .
+
+RUN pip install --retries 15 --default-timeout 1200 --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 5000
+
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "1", "--threads", "4", "--timeout", "120", "app:app"]
+

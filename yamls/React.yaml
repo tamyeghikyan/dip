@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-nginx-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-nginx-app
+  template:
+    metadata:
+      labels:
+        app: react-nginx-app
+    spec:
+      containers:
+      - name: react-nginx-container
+        image: react-nginx-app:latest 
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        envFrom:
+        - secretRef:
+            name: react-env-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-nginx-service
+spec:
+  selector:
+    app: react-nginx-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+---
+# secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: react-env-secret
+type: Opaque
+stringData:
+  REACT_APP_TOKEN:    "predict_digit"
+  REACT_APP_WS_URL:   "http://127.0.0.1:8000"
+  REACT_APP_API_URL:  "http://127.0.0.1:8000"

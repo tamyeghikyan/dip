@@ -1,0 +1,19 @@
+# Runtime API (Python 3.10). CPU-only: TensorFlow + PyTorch (YOLO).
+# Use the PyTorch CPU index — otherwise pip installs CUDA torch and pulls nvidia-cudnn, nvidia-nccl, etc.
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+Flask>=3.0,<4
+flask-cors>=4.0,<6
+gunicorn>=22.0,<24
+tensorflow-cpu>=2.15,<2.19
+opencv-python-headless>=4.8,<5
+pillow>=10.0,<12
+numpy>=1.26,<3
+
+# CPU-only wheels (+cpu). Keep versions in sync; see https://pytorch.org/get-started/previous-versions/
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+
+ultralytics>=8.0,<9
+pytesseract>=0.3.10,<0.4
