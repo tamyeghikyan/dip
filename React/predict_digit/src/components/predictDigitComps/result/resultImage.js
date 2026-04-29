@@ -59,8 +59,8 @@ const ResultImage = ({ prediction, closeModal }) => {
                                 </svg>
                             </div>
                             <div>
-                                <h2 className="text-xl font-bold text-foreground">Delays Delays</h2>
-                                <p className="text-sm text-muted-foreground">Delays delays delays delays</p>
+                                <h2 className="text-xl font-bold text-foreground">Chtanachvac Tekst</h2>
+                                <p className="text-sm text-muted-foreground">Nkaric hanvac tekst</p>
                             </div>
                         </div>
                         <button

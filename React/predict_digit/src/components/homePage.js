@@ -65,8 +65,8 @@ function HomePage() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Հdelays CNN delays",
-      description: "Delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays."
+      title: "Խdelays CNN Մdelays",
+      description: "Մեdelays delays delays delays CNN delays delays delays delays delays delays delays delays delays delays delays delays delays."
     },
     {
       icon: (
@@ -74,7 +74,7 @@ function HomePage() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
       ),
-      title: "Delays Delays",
+      title: "Delays Վdelays",
       description: "Delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays."
     },
     {
@@ -83,7 +83,7 @@ function HomePage() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: "Delays Delays Delays",
+      title: "Delays Delays Vdelays",
       description: "Delays delays delays delays delays delays delays delays delays delays delays delays delays delays."
     }
   ];
@@ -94,17 +94,17 @@ function HomePage() {
       <section className="text-center mb-20 md:mb-32">
         <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-8">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-          <span className="text-sm font-medium text-muted-foreground">CNN delays delays delays</span>
+          <span className="text-sm font-medium text-muted-foreground">CNN հdelays վdelays delays</span>
         </div>
 
         <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
-          <span className="text-foreground">Delays delays</span>
+          <span className="text-foreground">Թdelays Delays</span>
           <br />
-          <span className="gradient-text">Delays Delays delays</span>
+          <span className="gradient-text">AI Delays Delays</span>
         </h1>
 
         <p className="hero-subtitle text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed px-4">
-          Delays delays delays delays delays delays delays delays delays delays delays (CNN) delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays.
+          Մdelays delays delays delays delays delays delays delays delays delays (CNN) delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays.
         </p>
 
         <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -113,7 +113,7 @@ function HomePage() {
             className="group relative px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl shadow-lg glow-primary hover:shadow-xl transition-all duration-300 btn-lift overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Փdelays delays
+              Փորdelays հdelays
               <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -135,7 +135,7 @@ function HomePage() {
           </div>
           <div className="hero-stats text-center">
             <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">{'<'}50ms</div>
-            <div className="text-sm text-muted-foreground">Delays</div>
+            <div className="text-sm text-muted-foreground">Delays delays</div>
           </div>
           <div className="hero-stats text-center">
             <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">0-9</div>
@@ -148,10 +148,10 @@ function HomePage() {
       <section id="features" ref={featuresRef} className="mb-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Delays Delays
+            Hdelays Hdelays
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Delays delays delays delays delays delays delays delays delays delays delays delays.
+             Delays delays delays delays delays delays delays delays delays delays delays delays.
           </p>
         </div>
 
@@ -178,7 +178,7 @@ function HomePage() {
       {/* CTA Section */}
       <section className="text-center py-16 px-8 rounded-3xl bg-gradient-to-br from-card to-secondary border border-border">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-          Delays delays delays?
+          Պdelays delays delays?
         </h2>
         <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
           Delays delays delays delays delays delays delays delays delays delays delays delays.
@@ -187,7 +187,7 @@ function HomePage() {
           to="/try" 
           className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl shadow-lg glow-primary hover:shadow-xl transition-all duration-300 btn-lift"
         >
-          Delays delays
+          Sdelays hdelays
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>

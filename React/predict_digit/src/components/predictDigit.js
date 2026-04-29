@@ -33,10 +33,10 @@ const PredictDigit = () => {
                     <span className="text-sm font-medium text-muted-foreground">AI delays delays delays</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                    Delays delays <span className="gradient-text">Delays</span>
+                    Թdelays Delays <span className="gradient-text">Delays</span>
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Delays delays delays delays delays delays delays delays delays delays delays delays.
+                    Նdelays delays delays delays delays delays delays delays delays.
                 </p>
             </div>
 
@@ -46,7 +46,7 @@ const PredictDigit = () => {
             {/* Divider */}
             <div className="flex items-center gap-4 my-8">
                 <div className="flex-1 h-px bg-border"></div>
-                <span className="text-sm font-medium text-muted-foreground px-4">Delays</span>
+                <span className="text-sm font-medium text-muted-foreground px-4">Կdelays</span>
                 <div className="flex-1 h-px bg-border"></div>
             </div>
 

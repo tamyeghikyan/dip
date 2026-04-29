@@ -67,8 +67,8 @@ const Results = ({ prediction, closeModal }) => {
                                 </svg>
                             </div>
                             <div>
-                                <h2 className="text-xl font-bold text-foreground">Կdelays Delays</h2>
-                                <p className="text-sm text-muted-foreground">Delays delays delays</p>
+                                <h2 className="text-xl font-bold text-foreground">Կdelays Ardyunq</h2>
+                                <p className="text-sm text-muted-foreground">Gtnvac t'ver</p>
                             </div>
                         </div>
                         <button
@@ -100,7 +100,7 @@ const Results = ({ prediction, closeModal }) => {
                                     </div>
                                     <div className="flex-1">
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="font-medium text-foreground">Delays {parseInt(index) + 1}</span>
+                                            <span className="font-medium text-foreground">Թdelays {parseInt(index) + 1}</span>
                                             <span className="text-sm font-semibold text-primary">{confidencePercent}%</span>
                                         </div>
                                         <div className="h-2 bg-secondary rounded-full overflow-hidden">
