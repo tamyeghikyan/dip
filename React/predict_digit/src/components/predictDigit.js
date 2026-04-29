@@ -30,13 +30,13 @@ const PredictDigit = () => {
             <div className="page-header text-center mb-12">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-6">
                     <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                    <span className="text-sm font-medium text-muted-foreground">AI delays delays delays</span>
+                    <span className="text-sm font-medium text-muted-foreground">AI Digit Recognition</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                    Թdelays Delays <span className="gradient-text">Delays</span>
+                    Digit <span className="gradient-text">Recognition</span>
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Նdelays delays delays delays delays delays delays delays delays.
+                    Draw a digit or upload an image to recognize it.
                 </p>
             </div>
 
@@ -46,7 +46,7 @@ const PredictDigit = () => {
             {/* Divider */}
             <div className="flex items-center gap-4 my-8">
                 <div className="flex-1 h-px bg-border"></div>
-                <span className="text-sm font-medium text-muted-foreground px-4">Կdelays</span>
+                <span className="text-sm font-medium text-muted-foreground px-4">OR</span>
                 <div className="flex-1 h-px bg-border"></div>
             </div>
 

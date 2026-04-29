@@ -36,7 +36,7 @@ const Footer = () => {
                             </svg>
                         </div>
                         <span className="text-sm text-muted-foreground">
-                            &copy; {new Date().getFullYear()} DigitRec. Բdelays delays delays delays delays.
+                            &copy; {new Date().getFullYear()} DigitRec. All rights reserved.
                         </span>
                     </div>
 

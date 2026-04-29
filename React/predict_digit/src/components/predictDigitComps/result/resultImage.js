@@ -59,8 +59,8 @@ const ResultImage = ({ prediction, closeModal }) => {
                                 </svg>
                             </div>
                             <div>
-                                <h2 className="text-xl font-bold text-foreground">Chtanachvac Tekst</h2>
-                                <p className="text-sm text-muted-foreground">Nkaric hanvac tekst</p>
+                                <h2 className="text-xl font-bold text-foreground">Recognized Text</h2>
+                                <p className="text-sm text-muted-foreground">Text extracted from image</p>
                             </div>
                         </div>
                         <button
@@ -94,13 +94,13 @@ const ResultImage = ({ prediction, closeModal }) => {
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        Պdelays
+                        Copy
                     </button>
                     <button
                         onClick={handleClose}
                         className="flex-1 py-3 px-6 bg-primary text-primary-foreground font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 btn-lift"
                     >
-                        Փdelays
+                        Close
                     </button>
                 </div>
             </div>

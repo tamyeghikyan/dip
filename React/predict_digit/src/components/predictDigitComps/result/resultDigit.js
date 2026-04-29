@@ -67,8 +67,8 @@ const Results = ({ prediction, closeModal }) => {
                                 </svg>
                             </div>
                             <div>
-                                <h2 className="text-xl font-bold text-foreground">Կdelays Ardyunq</h2>
-                                <p className="text-sm text-muted-foreground">Gtnvac t'ver</p>
+                                <h2 className="text-xl font-bold text-foreground">Recognition Result</h2>
+                                <p className="text-sm text-muted-foreground">Detected digits</p>
                             </div>
                         </div>
                         <button
@@ -100,7 +100,7 @@ const Results = ({ prediction, closeModal }) => {
                                     </div>
                                     <div className="flex-1">
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="font-medium text-foreground">Թdelays {parseInt(index) + 1}</span>
+                                            <span className="font-medium text-foreground">Digit {parseInt(index) + 1}</span>
                                             <span className="text-sm font-semibold text-primary">{confidencePercent}%</span>
                                         </div>
                                         <div className="h-2 bg-secondary rounded-full overflow-hidden">
@@ -122,7 +122,7 @@ const Results = ({ prediction, closeModal }) => {
                         onClick={handleClose}
                         className="w-full py-3 px-6 bg-primary text-primary-foreground font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 btn-lift"
                     >
-                        Փdelays
+                        Close
                     </button>
                 </div>
             </div>
